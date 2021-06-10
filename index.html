@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Proyecto Final</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				
+				<section>
+					<h1 class="header1" >HarPer</h1>
+					<p style="text-align:center" > Hardware Periférico para audífonos individualizados de rango extendido
+					</p>
+
+					<p>
+					<div id='bars'>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					</p>
+				</section>
+				
+				<section> 
+					<section data-transition="convex">
+					<!-- countdown__module hide undefined -->
+						<div class="countdown__module " id="countdown">
+							<p><span style ="text-shadow: 2px 2px 4px #000000">80%</span> Personas</p>
+							<p><span style ="text-shadow: 2px 2px 4px #000000">M</span> Millones</p>
+							<p><span style ="text-shadow: 2px 2px 4px #000000" >S</span> Personalización</p>
+						</div><!-- End / countdown__module hide undefined -->
+				
+						<h3 style="vertical-align: middle;">Marco Teórico</h3>
+						<p style="font-size: 20px;"> Muchas personas tienen disminución auditiva ...</p>
+					</section>
+			
+					
+					<section data-transition="convex">
+						<p style="font-size: 20px;"> Muchas personas tienen disminución auditiva ...</p>
+					</section>
+
+				</section>
+
+				<section >	
+					<h3> Localización </h3>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Requirimientos </h3>
+					<ul>
+						<li class="fragment fade-in-then-out" >Adquisición de 4 a 6 mics</li>
+						<li class ="fragment fade-in-then-out">Conversión ADC/DAC</li>
+						<li class ="fragment fade-in-then-out">Interfaz de control</li>
+						<li class ="fragment fade-in-then-out">Portatil : Bateria</li>
+						<li class ="fragment fade-in-then-out">Baja latencia</li>
+						</ul>
+				</section>
+
+			
+
+					<section> 
+						<section data-transition="convex">
+						<h3>Solución propuesta</h3>
+						</section>
+						<section >
+							<div>
+								<img src="img/diagrama.svg" alt="Diagrama en bloques" width="1000" height="auto"> 
+							</div>
+						</section>
+				
+					</section>
+
+						
+				<section class ="cas" data-background="#5AACB0">
+					<section data-auto-animate>
+						<h2>Acondicionadores de señal </h2>
+					</section>
+				
+					<section>
+						<ul>
+							<li class="fragment" >Adaptación de impedancias</li>
+							<li class ="fragment">Pre amplificador</li>
+							<li class ="fragment">Amplificador</li>
+							<li class ="fragment">Filtro anti aliasing</li>
+							<li class ="fragment">Filtro anti imagen</li>
+						</ul>
+					</section>
+				</section>	
+	
+				<section >
+					<img src="img/diagrama.svg" alt="Diagrama en bloques" width="100%" height="auto"> 
+				</section>
+				
+				
+				<section class ="bat" data-background="#8F261D")>
+					<section data-auto-animate>
+						<h2>Sistema de batería</h2>
+					</section>	
+					<section data-auto-animate>
+						Alimentación de
+					    <a class="fragment fade-in">
+							CIs,
+						</a>
+						<a class="fragment fade-in">
+							Amplificadores,
+						</a>
+						<a class="fragment fade-in">
+							FPGA / SoC 	
+						</a>
+					</section>	
+					<section>
+						<ul>
+							<li class="fragment" >Convertidor DC/DC</li>
+							<li class ="fragment">Regulador/Protección</li>
+							<li class ="fragment">Circuito de carga</li>
+							<li class ="fragment">Indicador de batería</li>
+						</ul>
+					</section>
+					
+				</section>
+				
+				<section >
+					<img src="img/diagrama.svg" alt="Diagrama en bloques" width="100%" height="auto"> 
+				</section>
+			
+				<section class ="bat" data-background="#4d7e65")>
+					<section data-auto-animate>
+						<h2>Comunicación</h2>
+					</section>	
+					<section data-auto-animate>
+						<p class="fragment ">Pin Header</p>
+						<p class="fragment ">Coincidente con 
+							el pin out de FPGA / DSP board
+						</p>
+					</section>	
+					
+				</section>
+				
+				<section >
+					<img src="img/diagrama.svg" alt="Diagrama en bloques" width="100%" height="auto"> 
+				</section>
+			
+				<section class ="bat" data-background="#f4e664">
+					<section data-auto-animate>
+						<h2>Circuito Anti Rebote </h2>
+					</section>	
+					<section data-auto-animate>
+						<p class="fragment ">Circuito anti - rebote</p>
+						<p class="fragment "> 
+							Resistencias Pull Down/Up 
+						</p>
+					</section>	
+					
+				</section>	
+			
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,RevealZoom ]
+			});
+		</script>
+	</body>
+</html>
