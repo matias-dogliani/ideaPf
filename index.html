@@ -48,14 +48,13 @@
 					</section>
 					<section data-transition="convex">
 						<p class ="fragment fade" style="font-size: 20px;"> Disconformidad con los audífonos genéricos comerciales </p>
-						<p class ="fragment fade" style="font-size: 20px;"> Personificación baja</p>
+						<p class ="fragment fade" style="font-size: 20px;">  Baja personalización</p>
 					</section>
 
 				</section>
 
 				<section>
-
-					<section >
+					<section  data-background="#333" data-background-opacity="0.4" data-background-video="./img/carbon.mp4" data-background-video-loop data-background-video-muted>
 						<h4> Audı́fonos binaurales individualizados de rango extendido optimizados para 
 						localización espacial e inteligibilidad del habla en entornos sonoros complejos </h4>
 						<p> -Ing. Fermín Scalitti-</p>
@@ -71,12 +70,12 @@
 				</section>
 				<section data-transition="convex">
 					<h3>Requirimientos </h3>
-					<ul>
-						<li class="fragment fade-in-then-out" >Adquisición de 4 a 6 mics</li>
-						<li class ="fragment fade-in-then-out">Conversión ADC/DAC</li>
-						<li class ="fragment fade-in-then-out">Interfaz de control</li>
-						<li class ="fragment fade-in-then-out">Portatil : Bateria</li>
-						<li class ="fragment fade-in-then-out">Baja latencia</li>
+						<ul>
+							<li class="fragment fade-in-then-out" >Adquisición de 4 a 6 mics</li>
+							<li class ="fragment fade-in-then-out">Conversión ADC/DAC</li>
+							<li class ="fragment fade-in-then-out">Interfaz de control</li>
+							<li class ="fragment fade-in-then-out">Portatil : Bateria</li>
+							<li class ="fragment fade-in-then-out">Baja latencia</li>
 						</ul>
 				</section>
 
@@ -84,14 +83,23 @@
 
 					<section> 
 						<section data-transition="convex">
-						<h3>Solución propuesta</h3>
+							<h3 class="fragment fade-in">Solución propuesta</h3>
+							<h3 class="fragment fade-in">Objetivos - Alcance</h3>
 						</section>
-						<section >
+						<section data-transition="convex">
+						
+							<ul style="text-decoration:line-through; color:crimson;">
+								<li class="fragment fade-in" >Audio Injector</li>
+								<li class ="fragment fade-in">OCTO</li>
+								<li class ="fragment fade-in">CTAGFace</li>
+								<li class ="fragment fade-in">Cape4All</li>
+							</ul>
+						</section>
+						<section data-transition="convex">
 							<div>
-								<img src="img/diagrama.svg" alt="Diagrama en bloques" width="1000" height="auto"> 
+								<img src="img/diagrama.png" alt="Diagrama en bloques" width="1000" height="auto"> 
 							</div>
 						</section>
-				
 					</section>
 
 						
@@ -112,13 +120,13 @@
 				</section>	
 	
 				<section >
-					<img src="img/diagrama.svg" alt="Diagrama en bloques" width="100%" height="auto"> 
+					<img src="img/diagrama.png" alt="Diagrama en bloques" width="100%" height="auto"> 
 				</section>
-				
+			
 				
 				<section class ="bat" data-background="#8F261D")>
 					<section data-auto-animate>
-						<h2>Sistema de batería</h2>
+						<h2>Sistema de energía</h2>
 					</section>	
 					<section data-auto-animate>
 						Alimentación de
@@ -144,7 +152,7 @@
 				</section>
 				
 				<section >
-					<img src="img/diagrama.svg" alt="Diagrama en bloques" width="100%" height="auto"> 
+					<img src="img/diagrama.png" alt="Diagrama en bloques" width="100%" height="auto"> 
 				</section>
 			
 				<section class ="bat" data-background="#4d7e65")>
@@ -153,26 +161,24 @@
 					</section>	
 					<section data-auto-animate>
 						<p class="fragment ">Pin Header</p>
-						<p class="fragment ">Coincidente con 
-							el pin out de FPGA / DSP board
-						</p>
+						<p class="fragment "> Tests points de señales críticas </p>
+
 					</section>	
 					
 				</section>
 				
 				<section >
-					<img src="img/diagrama.svg" alt="Diagrama en bloques" width="100%" height="auto"> 
+					<img src="img/diagrama.png" alt="Diagrama en bloques" width="100%" height="auto"> 
 				</section>
 			
-				<section class ="bat" data-background="#f4e664">
+				<section class ="bat" data-background="#E6D05E">
 					<section data-auto-animate>
-						<h2>Circuito Anti Rebote </h2>
+						<h2>Interfaz de control</h2>
 					</section>	
 					<section data-auto-animate>
+						<p class="fragment ">Pulsadores </p>
+						<p class="fragment "> Encedido/Apagado</p>
 						<p class="fragment ">Circuito anti - rebote</p>
-						<p class="fragment "> 
-							Resistencias Pull Down/Up 
-						</p>
 					</section>	
 					
 				</section>	
@@ -191,7 +197,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				transiton:"convex",				
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,RevealZoom ]
 			});
