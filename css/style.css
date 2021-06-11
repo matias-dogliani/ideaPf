@@ -30,34 +30,34 @@
 .bar:nth-child(5)  {animation-delay: .8s;  }
 
 
-.countdown__module {
-  display: table;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  color: #F2B441;
-  vertical-align: top;
-}
+    .stat_module {
+    display: table;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    color: #F2B441;
+    vertical-align: top;
+  }
 
-.countdown__module span {
-  display: block;
-  font-family: "Work Sans", sans-serif;
-  font-size: 50px;
-  font-weight: 300px;
-  line-height: 1;
-  color: #fff;
-  margin-bottom: 5px;
-}
+  .stat_module span {
+    display: block;
+    font-family: "Work Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 300px;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 5px;
+  }
 
-.countdown__module p {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 20px;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 3px;
-  width: 25%;
-}
+  .stat_module p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    width: 25%;
+  }
 
 
